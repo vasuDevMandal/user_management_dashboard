@@ -193,6 +193,10 @@ table tr:nth-child(2){
     text-align: center;
     color: black;
 }
+.pr_name,th:nth-child(2)
+{
+    padding-left: 2ch;
+}
 .pr_date,
 table th:nth-child(1),
 table th:nth-child(3){

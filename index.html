@@ -64,7 +64,7 @@
         <div class="middle_wrapper">
            <table id="projects">
              
-                   <tr>
+                    <tr>
                         <th>#</th>
                         <th>Projects</th>
                         <th>Start Date</th>
@@ -250,8 +250,103 @@
             ]
 
     
-    console.log(JSON.stringify(Data));
-    console.log(JSON.parse(JSON.stringify(Data)));
+    // console.log(JSON.stringify(Data));
+    // console.log(JSON.parse(JSON.stringify(Data)));
+
+    let projects = [{
+        "id" : "1",
+        "projectName" : "new design project",
+        "status" : "pending",
+        "members" : {
+            "name": "name1",
+            "url" : "https//:www.google.com"
+        },
+        "progress" : "20"
+    },
+    {
+        "id" : "2",
+        "projectName" : "new design project2 2",
+        "status" : "pending",
+        "members" : {
+            "name": "name2",
+            "url" : "https//:www.google.com"
+        },
+        "progress" : "40"
+    },
+    {
+        "id" : "3",
+        "projectName" : "new design  3 3 3 project",
+        "status" : "pending",
+        "members" : {
+            "name": "name3",
+            "url" : "https//:www.google.com"
+        },
+        "progress" : "25"
+    },
+    {
+        "id" : "4",
+        "projectName" : "444444new design project4444",
+        "status" : "pending",
+        "members" : {
+            "name": "name4",
+            "url" : "https//:www.google.com"
+        },
+        "progress" : "56"
+    },
+    {
+        "id" : "5",
+        "projectName" : "5555new design55555 project",
+        "status" : "complete",
+        "members" : {
+            "name": "name1",
+            "url" : "https//:www.google.com"
+        },
+        "progress" : "100"
+    },
+    {
+        "id" : "6",
+        "projectName" : "new666666 design project666666",
+        "status" : "pending",
+        "members" : {
+            "name": "name6",
+            "url" : "https//:www.google.com"
+        },
+        "progress" : "78"
+    }
+
+];
+
+// console.log(JSON.stringify(projects));
+
+// console.log(projects['2'].progress);
+
+function displayProjects(){
+    for( var project in projects){
+        // console.log(project, projects[project]);
+
+
+
+    }
+}
+// displayProjects();
+
+function showTableData(){
+    var myTable = document.getElementById('projects');
+    // loop through each row after header
+    for(let i = 1 ; i < myTable.rows.lenght ; i++){
+        // get collection of current row
+        var objCells = myTable.rows.item(i).cells;
+
+        // loop through each cell of the current row to read cell values
+        for(let j = 0 ; j < objCells.lenght ; j++){
+            console.log(objCells.item(j).innerHTML);
+        }
+
+
+    }
+}
+
+showTableData();
 
 
 </script>
