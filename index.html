@@ -5,28 +5,184 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my user management dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+    </style>
+    
 </head>
 <body>
     
-<div class="top">
+<div class="wrapper">
 
-    <div class="top_main">
-        <div class="first_mod"></div>
-        <div class="second_mod"></div>
-        <div class="third_mod"></div>
-        <div class="fourth_mod"></div>
+    <div class="top">
+
+        <div class="top_main">
+            <div class="first_mod">
+                <div class="total_project">
+                    <span id="total_project_number">24</span>
+                    <i class="fas fa-folder"></i>
+                </div>
+                <span>Total Projects</span>
+            </div>
+            <div class="second_mod">
+                <div class="completed_project">
+                    <span id="completed_project_number">24</span>
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <span>Completed Projects</span>
+            </div>
+            <div class="third_mod">
+                <div class="pending_project">
+                    <span id="pending_project_number">24</span>
+                    <i class="fas fa-sticky-note"></i>
+                </div>
+                <span>Pending Projects</span>
+            </div>
+            <div class="fourth_mod">
+                <div class="search">
+                    search
+                </div>
+                <span class="search_bar">
+                    <form method="get">
+                        <input type="text" name="serach" id="search_bar"
+                        placeholder="search..">
+                    </form>
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="middle">
+        <div class="middle_wrapper">
+           <table id="projects">
+             
+                   <tr>
+                        <th>#</th>
+                        <th>Projects</th>
+                        <th>Start Date</th>
+                        <th>Status</th>
+                        <th>Team</th>
+                        <th>Progress</th>
+                        <th>Action</th>
+                    </tr>
+                
+                    <tr>
+                        <td class="pr_id">10</td>
+                        <td class="pr_name">new admin design</td>
+                        <td class="pr_date">02/05/2022</td>
+                        <td class="pr_status">completed</td>
+                        <td class="pr_team">
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                        </td>
+                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_actions">
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-times"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="pr_id">10</td>
+                        <td class="pr_name">new admin design</td>
+                        <td class="pr_date">02/05/2022</td>
+                        <td class="pr_status">completed</td>
+                        <td class="pr_team">
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                        </td>
+                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_actions">
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-times"></i>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="pr_id">10</td>
+                        <td class="pr_name">new admin design</td>
+                        <td class="pr_date">02/05/2022</td>
+                        <td class="pr_status">completed</td>
+                        <td class="pr_team">
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                        </td>
+                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_actions">
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-times"></i>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="pr_id">10</td>
+                        <td class="pr_name">new admin design</td>
+                        <td class="pr_date">02/05/2022</td>
+                        <td class="pr_status">completed</td>
+                        <td class="pr_team">
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                        </td>
+                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_actions">
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-times"></i>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="pr_id">10</td>
+                        <td class="pr_name">new admin design</td>
+                        <td class="pr_date">02/05/2022</td>
+                        <td class="pr_status">completed</td>
+                        <td class="pr_team">
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                        </td>
+                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_actions">
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-times"></i>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="pr_id">10</td>
+                        <td class="pr_name">new admin design</td>
+                        <td class="pr_date">02/05/2022</td>
+                        <td class="pr_status">completed</td>
+                        <td class="pr_team">
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                            <i class="fas fa-user-circle"></i>
+                        </td>
+                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_actions">
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-times"></i>
+                        </td>
+                     </tr>
+                
+             
+           </table>
+        </div>
     </div>
 
-</div>
-<div class="middle"></div>
-
-<div class="bottom">
-    <div class="bottom_main">
-        <button class="add_project"></button>
+    <div class="bottom">
+        <div class="add_project_btn" id="add_project_btn">+ add project</div>
+        
     </div>
-</div>
 
+
+</div>    
 
 
 </body>
