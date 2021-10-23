@@ -84,7 +84,15 @@
                             <i class="fas fa-user-circle"></i>
                             <i class="fas fa-user-circle"></i>
                         </td>
-                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_progress">
+                            <span> 
+                                <span>progress</span> 
+                                <span>40%</span> 
+                            </span>
+                            <div id="progressbar">
+                                <div></div>
+                            </div>
+                        </td>
                         <td class="pr_actions">
                             <i class="fas fa-pencil-alt"></i>
                             <i class="fas fa-times"></i>
@@ -100,7 +108,15 @@
                             <i class="fas fa-user-circle"></i>
                             <i class="fas fa-user-circle"></i>
                         </td>
-                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_progress">
+                            <span> 
+                                <span>progress</span> 
+                                <span>40%</span> 
+                            </span>
+                            <div id="progressbar">
+                                <div></div>
+                            </div>
+                        </td>
                         <td class="pr_actions">
                             <i class="fas fa-pencil-alt"></i>
                             <i class="fas fa-times"></i>
@@ -116,7 +132,15 @@
                             <i class="fas fa-user-circle"></i>
                             <i class="fas fa-user-circle"></i>
                         </td>
-                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_progress">
+                            <span> 
+                                <span>progress</span> 
+                                <span>40%</span> 
+                            </span>
+                            <div id="progressbar">
+                                <div></div>
+                            </div>
+                        </td>
                         <td class="pr_actions">
                             <i class="fas fa-pencil-alt"></i>
                             <i class="fas fa-times"></i>
@@ -132,7 +156,15 @@
                             <i class="fas fa-user-circle"></i>
                             <i class="fas fa-user-circle"></i>
                         </td>
-                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_progress">
+                            <span> 
+                                <span>progress</span> 
+                                <span>40%</span> 
+                            </span>
+                            <div id="progressbar">
+                                <div></div>
+                            </div>
+                        </td>
                         <td class="pr_actions">
                             <i class="fas fa-pencil-alt"></i>
                             <i class="fas fa-times"></i>
@@ -148,7 +180,15 @@
                             <i class="fas fa-user-circle"></i>
                             <i class="fas fa-user-circle"></i>
                         </td>
-                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_progress">
+                            <span> 
+                                <span>progress</span> 
+                                <span>40%</span> 
+                            </span>
+                            <div id="progressbar">
+                                <div></div>
+                            </div>
+                        </td>
                         <td class="pr_actions">
                             <i class="fas fa-pencil-alt"></i>
                             <i class="fas fa-times"></i>
@@ -164,7 +204,15 @@
                             <i class="fas fa-user-circle"></i>
                             <i class="fas fa-user-circle"></i>
                         </td>
-                        <td class="pr_progress">progress 100%</td>
+                        <td class="pr_progress">
+                            <span> 
+                                <span>progress</span> 
+                                <span>40%</span> 
+                            </span>
+                            <div id="progressbar">
+                                <div></div>
+                            </div>
+                        </td>
                         <td class="pr_actions">
                             <i class="fas fa-pencil-alt"></i>
                             <i class="fas fa-times"></i>
@@ -184,6 +232,29 @@
 
 </div>    
 
+<script>
+
+   let Data = [
+                {
+                    projectName: "",
+                    startDate: "",
+                    status: "",
+                    members: [
+                        {
+                            name: "",
+                            avatarUrl: ""
+                        }
+                    ],
+                    progress: ""
+                }
+            ]
+
+    
+    console.log(JSON.stringify(Data));
+    console.log(JSON.parse(JSON.stringify(Data)));
+
+
+</script>
 
 </body>
 </html>

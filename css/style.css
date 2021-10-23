@@ -95,7 +95,7 @@ body{
     color:grey;
 }
 .search_bar input{
-    height:6vh;
+    height:5vh;
     width: 80%;
     padding: 1vh;
     outline: none;
@@ -112,7 +112,7 @@ body{
 .search_bar i{
     float: right;
     width: 20%;
-    height: 6vh;
+    height: 5vh;
     color: white;
     background-color: rgb(209, 87, 87);
     display: flex;
@@ -182,6 +182,7 @@ table th{
 table td{
     /* padding: 2vh 0 3vh 1vh; */
     height: 10vh;
+    color: grey;
 }
 
 table tr:nth-child(2){
@@ -190,11 +191,16 @@ table tr:nth-child(2){
 .pr_id{
     font-weight: bold;
     text-align: center;
+    color: black;
 }
 .pr_date,
 table th:nth-child(1),
 table th:nth-child(3){
     text-align: center;
+}
+.pr_date{
+    font-family: "arial";
+    font-size: .8em;
 }
 .pr_actions{
     width: 12vh;
@@ -217,3 +223,29 @@ table th:nth-child(3){
 .pr_actions i:last-child{
     color:rgb(185, 61, 61)
 }
+.pr_progress{
+    width: 30vh;
+    /* border: 1px solid green; */
+    padding: 1vh 2vh;
+}
+.pr_progress > span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1vh;
+}
+#progressbar {
+    background-color:rgb(218, 216, 216);
+    border-radius: 5px;
+    /* (height of inner div) / 2 + padding */
+    /* padding: 3px; */
+     /* border: 1px solid green; */
+  }
+  
+#progressbar>div {
+    background-color: rgb(62, 141, 231);
+    width: 40%;
+    /* Adjust with JavaScript */
+    height: 5px;
+    border-radius: 2%;
+  }
